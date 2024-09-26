@@ -1,0 +1,242 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+body{
+    background-color: #041122;
+    
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+    background: radial-gradient(circle at bottom, #001d4a, #000000); /* Fundo gradiente para o céu */
+    overflow: hidden;
+    position: relative;
+}
+
+/* Estrelas pequenas */
+body::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 2px;
+    height: 2px;
+    background: transparent;
+    box-shadow: 
+        50px 100px white, 
+        150px 200px #ffffff88, 
+        200px 50px #ffffff88,
+        300px 300px #ffffff88,
+        400px 100px #ffffff,
+        500px 400px white,
+        600px 50px white,
+        700px 200px #ffffff,
+        800px 300px #ffffff88,
+        900px 50px #ffffff88,
+        1000px 400px #ffffff,
+        1100px 500px white, 
+        1200px 600px #ffffff88, 
+        1300px 700px #ffffff88,
+        1400px 800px #ffffff88,
+        1500px 900px #ffffff,
+        1600px 1000px white,
+        1700px 1100px white,
+        1800px 1200px #ffffff,
+        1900px 1300px #ffffff88,
+        2000px 1400px #ffffff88;
+    animation: twinkle 5s infinite alternate;
+}
+
+/* Estrelas médias */
+body::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 3px;
+    height: 3px;
+    background: transparent;
+    box-shadow: 
+        100px 200px white, 
+        200px 100px #ffffff88, 
+        300px 400px #ffffff88,
+        500px 500px #ffffff88,
+        600px 150px #ffffff,
+        700px 600px white,
+        800px 350px white,
+        900px 500px #ffffff,
+        1000px 700px #ffffff88,
+        1100px 400px #ffffff88,
+        1200px 300px #ffffff,
+        1300px 800px white, 
+        1400px 500px #ffffff88, 
+        1500px 900px #ffffff88,
+        1600px 200px #ffffff88,
+        1700px 100px #ffffff,
+        1800px 700px white,
+        1900px 300px white,
+        2000px 150px #ffffff,
+        2100px 1000px #ffffff88;
+    animation: twinkle 7s infinite alternate;
+}
+
+/* Animação de brilho nas estrelas */
+@keyframes twinkle {
+    0% {
+        opacity: 0.8;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+
+
+.cabeca{
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    gap: 80px;
+    padding: 5px;
+}
+.img-g{
+    height: 40px;
+}
+
+.botao{
+    display: inline-block;
+    height: 54px;
+    width: 140px;
+    border-radius: 32px;
+    background-color: rgb(21, 169, 234);
+    border: none;
+    cursor: pointer;
+    padding: 10px 20px;
+    color: white;
+    font-size: 16px;
+    transition: box-shadow 0.10s ease;
+    text-decoration: none;
+}
+
+.botao:hover{
+    background-color: rgb(122, 181, 206);
+    box-shadow: 0 0 15px rgba(81, 226, 252, 0.7);
+}
+
+.conteudo-meio{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 80px;
+    gap: 30px;
+}
+
+.h1-meio{
+    color: white;
+    font-family: sans-serif;
+}
+
+.container-meio{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 90px;
+    border: 1px solid white;
+    border-radius: 50px;
+    height: 60px;
+    width: 330px;
+    background-color: rgba(47, 165, 233, 0.226);
+    
+}
+
+.mini-container-meio{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid;
+    border-radius: 50px;
+    height: 45px;
+    width: 160px;
+    background-color: rgb(21, 169, 234);
+    border: none;
+    cursor: pointer;
+    padding: 2px 2px;
+    font-size: 16px;
+    transition: box-shadow 0.10s ease;
+    text-decoration: none;
+    
+}
+
+.mini-container-meio:hover{
+    background-color: rgb(122, 181, 206);
+    box-shadow: 0 0 15px rgba(81, 226, 252, 0.7);
+}
+
+h3{
+    font-family: sans-serif;
+}
+
+.login{
+    text-decoration: none;
+    color: inherit;
+}
+
+.login-insta{
+    text-decoration: none;
+    color: inherit;
+}
+
+.seçao-meio{
+    display: flex;
+    justify-content: space-around;
+    padding:5%;
+    gap: 10px;
+}
+
+.s-1{
+    display: flex;
+    flex-direction: column;
+    background-color: #3c4f7773;
+    gap: 30px;
+    border: 1rem;
+    width: 20%;
+    height: 300px;
+    align-items: center;
+    border-radius: 50px;
+    transition: box-shadow 0.10s ease;
+    cursor: pointer;
+    border-radius: 2rem;
+    transition: transform 0.5s ease;
+}
+
+.s-1:hover{
+transform: scale(1.1);
+}
+
+.titulo{
+    font-family: 'Inter';
+    color: #FFFF;
+    font-size: 1.2rem;
+}
+
+.lista{
+    color: rgba(255, 255, 255, 0.295);
+    font-family: sans-serif;
+
+}
+
+
+
+
+
+
+
+
+
+.img-meio-2{
+    width: 70px;
+}
